@@ -1,73 +1,126 @@
-# React + TypeScript + Vite
+## Modern Portfolio Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🌟 Project Overview
 
-Currently, two official plugins are available:
+A high-performance portfolio application designed to showcase technical projects and professional expertise. The project is built with a focus on clean architecture, type safety, and a seamless user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🏞️ Project Previews
 
-## React Compiler
+<p align="center">
+   <img src="./src/assets/previews/preview-1.png" width="48%" alt="Home Page" />
+   <img src="./src/assets/previews/preview-2.png" width="48%" alt="Home Page Dark" />
+   <img src="./src/assets/previews/preview-3.png" width="32%" alt="Portfolio" />
+   <img src="./src/assets/previews/preview-6.png" width="32%" alt="Skills" />
+   <img src="./src/assets/previews/preview-7.png" width="32%" alt="Contacts" />
+   <img src="./src/assets/previews/preview-3.png" width="48%" alt="Loading Text Loader" />
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 [Live Demo](https://my-portfolio-y0m2.onrender.com)
 
-## Expanding the ESLint configuration
+### 🚀 Key Features & Implementation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Smooth Navigation: Client-side routing is implemented to ensure fast and fluid transitions between pages without full page reloads.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Adaptive Theme System: A fully integrated Dark/Light mode toggle is available, with user preferences saved for future sessions.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Smart Data Management: All project information is centralized in a dedicated configuration file, allowing for easy updates and scalability.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Optimized Loading UX: Custom-designed loading animations are utilized during data fetching to maintain high user engagement.
+
+- Mobile-First Design: The interface is fully responsive, providing an optimal viewing experience across all devices, from smartphones to desktops.
+
+- Modular Architecture: The application is built using a "building block" (component-based) approach, ensuring that code is highly reusable and easy to maintain.
+
+- Robust Type Safety: TypeScript is used throughout the project to prevent runtime errors and ensure consistent data structures.
+
+- Custom Logic (Hooks): Specialized React hooks are developed to handle complex operations like asynchronous data fetching and UI state management.
+
+- Isolated Styling: CSS Modules are used for component-level styling, preventing class name conflicts and keeping the codebase organized.
+
+### 🛠 Technologies Used
+
+- Core: React 19, TypeScript, Vite
+
+- Routing: React Router 7
+
+- Data Management: JSON Server (REST API Simulation)
+
+- Icons & UI: React Icons
+
+- Development Tools: ESLint, Prettier, Concurrently
+
+- Automation: Generate React CLI
+
+- Plugins: SVGR (SVG as React components)
+
+- Styling: CSS Modules
+
+### 📂 Folder Structure
+
+```text
+src/
+├── assets/                 # Static assets (logos, project images, icons)
+│   ├── favicon.svg
+│   ├── hero.png            # Main landing page image
+│   └── icons/              # UI icons (sun, moon, tech stack logos)
+├── components/             # Reusable UI components
+│   ├── ButtonLink/         # Styled navigation buttons
+│   ├── Header/             # Site header and navigation menu
+│   ├── Loader/             # Custom CSS loading spinner
+│   ├── MainLayout/         # Global layout wrapper
+│   ├── ProjectCard/        # Individual project card preview
+│   ├── ProjectList/        # Grid/List rendering of projects
+│   └── ThemeSwitcher/      # Dark/Light mode toggle
+├── constants/              # Static data and configuration
+│   └── global.constants.ts # Global application constants
+├── helpers/                # Utility functions
+│   └── delayFn.ts          # Function for simulating network latency
+├── hooks/                  # Custom React hooks
+│   ├── useFetch.ts         # Hook for API data fetching
+│   └── useDelayedLoader.ts # Hook for managing loading states
+├── pages/                  # Main route-level components
+│   ├── HomePage/           # Personal intro and overview
+│   ├── PortfolioPage/      # Projects showcase page
+│   ├── ProjectPage/        # Individual project details
+│   ├── SkillsPage/         # Technical and soft skills overview
+│   └── ContactsPage/       # Reach out and contact form
+├── types/                  # TypeScript interfaces and definitions
+│   └── global.types.ts     # Shared application types
+├── App.tsx                 # Main application entry point and routing
+├── main.tsx                # Application entry point
+└── index.css               # Global styles and CSS variables
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### How to run a project locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Open a terminal and run the command:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+#### 1. Cloning a repository
+
+```bash
+git clone [https://github.com/AlexandraKurylo/my-portfolio.git](https://github.com/AlexandraKurylo/my-portfolio.git)
+```
+
+#### 2. Installing dependencies
+
+```bash
+   npm install
+```
+
+#### 3. Starting the database (Terminal 1)
+
+```bash
+   npm run server
+```
+
+#### 4. Launching the application (Terminal 2)
+
+```bash
+   npm run dev
+```
+
+#### 5. You can run the database and application with one command in one terminal
+
+```bash
+   npm run start:app
 ```
