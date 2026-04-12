@@ -10,6 +10,8 @@ A high-performance portfolio application designed to showcase technical projects
    <img src="./src/assets/previews/preview-1.png" width="48%" alt="Home Page" />
    <img src="./src/assets/previews/preview-2.png" width="48%" alt="Home Page Dark" />
    <img src="./src/assets/previews/preview-3.png" width="48%" alt="Portfolio" />
+   <img src="./src/assets/previews/preview-7.png" width="48%" alt="React Cards App" />
+   <img src="./src/assets/previews/preview-8.png" width="48%" alt="Furniture Layout" />
    <img src="./src/assets/previews/preview-4.png" width="48%" alt="Skills" />
    <img src="./src/assets/previews/preview-5.png" width="48%" alt="Contacts" />
    <img src="./src/assets/previews/preview-6.png" width="48%" alt="Loading Text Loader" />
