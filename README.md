@@ -7,12 +7,12 @@ A high-performance portfolio application designed to showcase technical projects
 ### 🏞️ Project Previews
 
 <p align="center">
-   <img src="./src/assets/previews/preview-1.png" width="48%" alt="Home Page" />
-   <img src="./src/assets/previews/preview-2.png" width="48%" alt="Home Page Dark" />
-   <img src="./src/assets/previews/preview-3.png" width="32%" alt="Portfolio" />
-   <img src="./src/assets/previews/preview-6.png" width="32%" alt="Skills" />
-   <img src="./src/assets/previews/preview-7.png" width="32%" alt="Contacts" />
-   <img src="./src/assets/previews/preview-3.png" width="48%" alt="Loading Text Loader" />
+   <img src="./src/assets/previews/preview-1.png" width="50%" alt="Home Page" />
+   <img src="./src/assets/previews/preview-2.png" width="50%" alt="Home Page Dark" />
+   <img src="./src/assets/previews/preview-3.png" width="50%" alt="Portfolio" />
+   <img src="./src/assets/previews/preview-4.png" width="50%" alt="Skills" />
+   <img src="./src/assets/previews/preview-5.png" width="50%" alt="Contacts" />
+   <img src="./src/assets/previews/preview-6.png" width="50%" alt="Loading Text Loader" />
 </p>
 
 🔗 [Live Demo](https://my-portfolio-y0m2.onrender.com)
