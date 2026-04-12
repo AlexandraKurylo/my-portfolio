@@ -13,7 +13,7 @@
       "id": "2",
       "title": "📝Responsive Semantic Static Layout 'Furniture'",
       "previewUrl": "furniture-project.png",
-      "description": "An interactive, feature-rich platform designed for mastering React.js core concepts through a structured flashcard system. This Single Page Application (SPA) serves as both a study tool and a demonstration of modern frontend architecture.",
+      "description": "This project is a fully responsive landing page for a furniture store (static landing page), developed from a professional Figma design. It focuses on high-quality adaptive layout, ensuring a seamless user experience across mobile, tablet, and desktop devices. The implementation emphasizes clean code structure, modern CSS techniques, and pixel-perfect accuracy.",
       "stack": ["HTML5", "CSS3", "SCSS", "JavaScript"],
       "githubUrl": "https://github.com/AlexandraKurylo/furniture",
       "liveDemoUrl": "https://alexandrakurylo.github.io/furniture/"
