@@ -1,7 +1,7 @@
 .container {
   max-width: 40.625rem;
   margin: 0 auto;
-  padding: 3.75rem 1.25rem;
+  padding: 2.5rem 1.25rem;
 }
 
 .title {
@@ -48,7 +48,7 @@
 }
 
 .valText {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-color);
   font-weight: 500;
   transition: color 0.2s;
