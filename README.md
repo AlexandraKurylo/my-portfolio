@@ -10,11 +10,9 @@ A high-performance portfolio application designed to showcase technical projects
    <img src="./src/assets/previews/preview-1.png" width="48%" alt="Home Page" />
    <img src="./src/assets/previews/preview-2.png" width="48%" alt="Home Page Dark" />
    <img src="./src/assets/previews/preview-3.png" width="48%" alt="Portfolio" />
-   <img src="./src/assets/previews/preview-7.png" width="48%" alt="React Cards App" />
-   <img src="./src/assets/previews/preview-8.png" width="48%" alt="Furniture Layout" />
+   <img src="./src/assets/previews/preview-6.png" width="48%" alt="React Cards App" />
    <img src="./src/assets/previews/preview-4.png" width="48%" alt="Skills" />
    <img src="./src/assets/previews/preview-5.png" width="48%" alt="Contacts" />
-   <img src="./src/assets/previews/preview-6.png" width="48%" alt="Loading Text Loader" />
 </p>
 
 🔗 [Live Demo](https://my-portfolio-y0m2.onrender.com)
@@ -62,31 +60,34 @@ A high-performance portfolio application designed to showcase technical projects
 ```text
 src/
 ├── assets/                 # Static assets (logos, project images, icons)
-│   ├── favicon.svg
-│   ├── hero.png            # Main landing page image
-│   └── icons/              # UI icons (sun, moon, tech stack logos)
 ├── components/             # Reusable UI components
 │   ├── ButtonLink/         # Styled navigation buttons
 │   ├── Header/             # Site header and navigation menu
 │   ├── Loader/             # Custom CSS loading spinner
 │   ├── MainLayout/         # Global layout wrapper
 │   ├── ProjectCard/        # Individual project card preview
-│   ├── ProjectList/        # Grid/List rendering of projects
-│   └── ThemeSwitcher/      # Dark/Light mode toggle
+│   └── ProjectList/        # Grid/List rendering of projects
 ├── constants/              # Static data and configuration
 │   └── global.constants.ts # Global application constants
+├── features/               # Complex functional modules
+│   └── ThemeToggler/       # Theme switching logic & UI
 ├── helpers/                # Utility functions
 │   └── delayFn.ts          # Function for simulating network latency
 ├── hooks/                  # Custom React hooks
-│   ├── useFetch.ts         # Hook for API data fetching
-│   └── useDelayedLoader.ts # Hook for managing loading states
+│   ├──useDelayedLoader.ts
+│   ├── useFetch.ts
+│   └── useTheme.ts
 ├── pages/                  # Main route-level components
 │   ├── HomePage/           # Personal intro and overview
 │   ├── PortfolioPage/      # Projects showcase page
 │   ├── ProjectPage/        # Individual project details
 │   ├── SkillsPage/         # Technical and soft skills overview
 │   └── ContactsPage/       # Reach out and contact form
-├── types/                  # TypeScript interfaces and definitions
+├── theme/                  # Styling configuration & provider
+│ ├── index.ts
+│ └── ThemeProvider.tsx
+├── types/                  # Global TypeScript definitions
+│   ├── global.enums.ts
 │   └── global.types.ts     # Shared application types
 ├── App.tsx                 # Main application entry point and routing
 ├── main.tsx                # Application entry point
