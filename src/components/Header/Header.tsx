@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import cls from "./Header.module.css";
-import { ThemeSwitcher } from "../ThemeSwitcher";
 import { NavLink } from "react-router-dom";
 import { LuLayoutDashboard } from "react-icons/lu";
+import { ThemeToggler } from "../../features/ThemeToggler";
 
 export const Header = () => {
   return (
@@ -25,7 +25,7 @@ export const Header = () => {
           Contacts
         </NavLink>
       </div>
-      <ThemeSwitcher />
+      <ThemeToggler />
     </header>
   );
 };

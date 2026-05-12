@@ -44,7 +44,7 @@ body {
   background-color: var(--main-bg-color);
 }
 
-body[data-theme='dark'] {
+.darkLayout {
   --main-bg-color: #23272F;
   --text-color: #fff;
 
@@ -59,7 +59,7 @@ body[data-theme='dark'] {
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-bg-color: #fff;
+    --main-bg-color: #f8f9fa;
     --text-color: #000;
 
     --btn-bg-color: #383b3f;
